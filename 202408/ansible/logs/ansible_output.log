@@ -1,0 +1,18 @@
+2024-08-02 05:05:10,305 p=1912 u=JoaquinAlfredo n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-08-02 05:05:10,475 p=1912 u=JoaquinAlfredo n=ansible | PLAY [all] *************************************************************************************************************************************************************************************
+2024-08-02 05:05:10,486 p=1912 u=JoaquinAlfredo n=ansible | TASK [Gathering Facts] *************************************************************************************************************************************************************************
+2024-08-02 05:05:10,595 p=1912 u=JoaquinAlfredo n=ansible | fatal: [127.0.0.1]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.\r\nJoaquinAlfredo@127.0.0.1: Permission denied (publickey).", "unreachable": true}
+2024-08-02 05:05:12,883 p=1912 u=JoaquinAlfredo n=ansible | ok: [localhost]
+2024-08-02 05:05:12,915 p=1912 u=JoaquinAlfredo n=ansible | TASK [include_role : 2PRecuperatorio] **********************************************************************************************************************************************************
+2024-08-02 05:05:12,958 p=1912 u=JoaquinAlfredo n=ansible | TASK [2PRecuperatorio : Rol: 2PRecuperatorio] **************************************************************************************************************************************************
+2024-08-02 05:05:12,973 p=1912 u=JoaquinAlfredo n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: 2PRecuperatorio"
+}
+2024-08-02 05:05:12,996 p=1912 u=JoaquinAlfredo n=ansible | TASK [Otra tarea] ******************************************************************************************************************************************************************************
+2024-08-02 05:05:13,010 p=1912 u=JoaquinAlfredo n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-08-02 05:05:13,049 p=1912 u=JoaquinAlfredo n=ansible | PLAY RECAP *************************************************************************************************************************************************************************************
+2024-08-02 05:05:13,050 p=1912 u=JoaquinAlfredo n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-08-02 05:05:13,050 p=1912 u=JoaquinAlfredo n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
